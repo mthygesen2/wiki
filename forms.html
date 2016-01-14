@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="css/bootstrap.min.css" media="all"  charset="utf-8" type="text/css">
-    <link rel="stylesheet" href="css/index-styles.css" media="all"  charset="utf-8" type="text/css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css"
+    type="text/css" media="all"  charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css" type= "text/css" media= "all">
     <script src="js/jquery-1.12.0.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/pages.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <title>Wiki page</title>
+    <title>Forms</title>
   </head>
 
   <body>
-    <div class="container">
+    <div class="content">
       <nav class="navbar navbar-fixed-top navbar-inverse">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -18,7 +20,7 @@
           </div>
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#" aria-haspopup="true" aria-expanded="false">Pages<span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -44,7 +46,7 @@
                   <li><a href="jquery.html">jQuery</a></li>
                   <li><a href="dommanipulationandtraversal.html">DOM Manipulation and Traversal</a>
                   </li>
-                  <li><a href="forms.html">Forms</a></li>
+                  <li class="active"><a href="forms.html">Forms</a></li>
                   <li><a href="attributes.html">Attributes</a></li>
                   <li><a href="branching.html">Branching</a></li>
                   <li><a href="arrays.html">Arrays</a></li>
@@ -56,13 +58,62 @@
         </div>
       </nav>
 <!--end Navbar-->
-      <h1>JavaScript and jQuery Wiki</h1>
-      <div>
-        <ul class= "vocab">
-          <li><a href="markdown.html">Markdown</a></li>
-          <li>Block elements</li>
-          <li>Inline elements</li>
-        </ul>
+
+    <div class="overview">
+    <h1>Forms</h1>
+    <h3>Overview</h3>
+      <p>Forms can be used to accept information, and place it into values. For instance madlibs. etc.
+      </p>
+    </div>
+    <div class="definition">
+    <h4>Definition:</h4>
+      <p>
+        HTML forms are used to collect user input.
+        HTML forms contain form elements.
+        Form elements are different types of input elements, checkboxes, radio buttons, submit buttons, and more.
+      </p>
+    </div>
+    <div class="howitworks">
+    <h4>How it Works:</h4>
+    <div id="blanks">
+       <form>
+         <div class="form-group">
+           <label for="name">Your name</label>
+           <input id="name" class="form-control" type="text">
+           <button type="submit" class="btn">Submit</button>
+         </div>
+       </form>
+       </div>
+       <span class="outputname">Hello </span>
+
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="example">
+        HTML
+        Ex.
+        <textarea>
+        <form id="some-form">
+          <label for="some-input">Your input:</label>
+          <input id="some-input" type="text">
+
+          <button type="submit" class="btn">Submit!</button>
+          </form>
+        </textarea>
+          </div>
+      </div>
+      <div class="col-md-6">
+        <p>
+          <div class="example">
+            <p>Ex.
+              $("form#some-form").submit(function(event) {
+                var someInput = $("input#some-input").val()
+                event.preventDefault();
+              });
+            </p>
+          </div>
+        </p>
+      </div>
       </div>
     </div>
   </body>
