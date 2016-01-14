@@ -1,0 +1,27 @@
+.content {
+  width: auto;
+  padding-top: 50px;
+}
+h1 {
+  text-align: center;
+  padding: 3%;
+  border: 1px solid green;
+  border-radius: 10%;
+}
+.overview {
+  margin: 15% ;
+  font-size: 20px;
+}
+.definition {
+  margin: 10%;
+  font-size: 18px;
+}
+.howitworks {
+  margin: 10%;
+  font-size: 18px;
+  font-weight: normal;
+}
+.example {
+  border: 1px solid black;
+  padding: 4%;
+}

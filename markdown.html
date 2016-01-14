@@ -2,8 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css" media="all"  charset="utf-8" type="text/css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" media="all"  charset="utf-8" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css"
+    type="text/css" media="all"  charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css" type= "text/css" media= "all">
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
     <title>Wiki page</title>
@@ -29,33 +30,49 @@
       </div>
     </nav>
 
-
+    <div class="content">
+    <div class="overview">
+    <h1>Markdown</h1>
     <h3>Overview</h3>
       <p>Many people think that creating a web page involves really complicated code that requires extensive studying to understand. This is not necessarily the case. We are going to learn a simple language called Markdown in this lesson that will let you create web pages really easily. But before we do that let's quickly go over what the World Wide Web is in a nutshell.
       </p>
+    </div>
+    <div class="definition">
     <h4>Definition:</h4>
       <p>Markdown is a way to style text on the web. You control the display of the document; formatting words as bold or italic, adding images, and creating lists are just a few of the things we can do with Markdown. Mostly, Markdown is just regular text with a few non-alphabetic characters thrown in, like # or *.
       </p>
+    </div>
+    <div class="howitworks">
     <h4>How it Works:</h4>
-      <p>Headers are constructed with # symbols and there are six sizes with one being the largest and 6 the smallest.
-        Ex.
-        # Best Chocolate Chip Cookies
-        ## Best Chocolate Chip Cookies
-        ### Best Chocolate Chip Cookies
-        #### Best Chocolate Chip Cookies
-        ##### Best Chocolate Chip Cookies
-        ###### Best Chocolate Chip Cookies
-      </p>
-      <p>In Markdown there are ordered lists, which means they are numbered, and there are unordered lists, which use bullet points instead of numbers. In an unordered list, we use the * symbol followed by one space before the text. In an ordered list, we use regular numerals followed by a period and a space.
-        Ex.
-        * Butter
-        * Sugar
-        1. Beat the butter...
-        2. Mix the flour...
-      </p>
-
-
-
-
+    <div class="row">
+      <div class="col-md-6">
+        <p>Headers are constructed with # symbols and there are six sizes with one being the largest and 6 the smallest.
+          <div class="example">
+          <p>
+          Ex.<br>
+          # Best Chocolate Chip Cookies<br>
+          ## Best Chocolate Chip Cookies<br>
+          ### Best Chocolate Chip Cookies<br>
+          #### Best Chocolate Chip Cookies<br>
+          ##### Best Chocolate Chip Cookies<br>
+          ###### Best Chocolate Chip Cookies
+          <p>
+          </div>
+        </p>
+      </div>
+      <div class="col-md-6">
+        <p>In Markdown there are ordered lists, which means they are numbered, and there are unordered lists, which use bullet points instead of numbers. In an unordered list, we use the * symbol followed by one space before the text. In an ordered list, we use regular numerals followed by a period and a space.
+          <div class="example">
+            <p>Ex.<br>
+            * Butter<br>
+            * Sugar<br>
+            1. Beat the butter...<br>
+            2. Mix the flour...
+            </p>
+          </div>
+        </p>
+      </div>
+      </div>
+    </div>
   </body>
 </html>
