@@ -1,3 +1,6 @@
+.container{
+  padding-top: 5%;
+}
 h1 {
   text-align: center;
   padding: 5px;
@@ -6,9 +9,19 @@ h1 {
   border-radius: 25px;
   margin-top: 5px;
   margin: 40px;
+  background-color: white;
 
 }
 body {
   background-image: url(../img/bg-img2.jpeg);
 
+}
+.vocab {
+  list-style: inside;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+.vocab li a {
+  color: white;
 }
