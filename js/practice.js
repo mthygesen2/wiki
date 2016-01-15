@@ -18,4 +18,7 @@ $(document).ready(function(event){
     $("#99bofb").click(function() {
       $(".beer").toggle();
   });
+
+  var names = ["bob", "joe", "mike"]
+  
 });
